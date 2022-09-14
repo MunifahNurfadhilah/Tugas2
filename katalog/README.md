@@ -5,6 +5,8 @@ Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu 
 **Bagan request client ke web aplikasi berbasis Django**
 ![Gambar]('../../pbp.jpg?raw=true')
 
+https://tugas2pudil.herokuapp.com/katalog
+
 Penjelasan : 
 User memberikan request akan diterima oleh urls.py dan diarahkan ke halaman views.py yang bersangkutan. Setelah diterima oleh views.py, fungsi yang berada pada views.py akan dijalankan dan mengquery data dengan models.py sebagai penghubung. Jika request dari user sudah selesai di proses, hasil data akan di return sebagai response dan hasilnya akan di render oleh template untuk diperlihatkan ke user. 
 
