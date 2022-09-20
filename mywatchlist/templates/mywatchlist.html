@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+
+  <h1>Lab 1 Assignment PBP/PBD</h1>
+
+  <h5>Name: </h5>
+  <p>Munifah Nurfadhilah</p>
+
+  <h5>Student ID: </h5>
+  <p>2106654851</p>
+
+  <table style="text-align: center; padding: 12px 15px;">
+    <tr>
+      <th style= "padding: 10px;">Watched</th>
+      <th style= "padding: 10px;">Title</th>
+      <th style= "padding: 10px;">Rating</th>
+      <th style= "padding: 10px;">Release Date</th>
+      <th style= "padding: 10px;">Review</th>
+    </tr>
+    {% comment %} Add the data below this line {% endcomment %}
+    {% for movies in list_mywatchlist %}
+        <tr>
+            <td style= "text-align: center; padding: 15px;">{{movies.watched_film}}</td>
+            <td style= "text-align: center; padding: 15px;">{{movies.title_film}}</td>
+            <td style= "text-align: center; padding: 15px;">{{movies.rating_film}}</td>
+            <td style= "text-align: center; padding: 15px;">{{movies.release_date}}</td>
+            <td style= "text-align: center; padding: 15px;">{{movies.review_film}}</td>
+        </tr>
+    {% endfor %}
+  </table >
+
+ {% endblock content %}

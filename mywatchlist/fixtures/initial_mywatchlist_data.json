@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 1,
+        "fields": {
+            "watched_film": "Sudah",
+            "title_film": "Inception",
+            "rating_film": "5",
+            "release_date": "28 Juli 2010",
+            "review_film": "The plot was amazing."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 2,
+        "fields": {
+            "watched_film": "Sudah",
+            "title_film": "Interstellar",
+            "rating_film": "5",
+            "release_date": "26 Oktober 2014",
+            "review_film": "Best sci-fi everrr"
+         }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 3,
+        "fields": {
+            "watched_film": "Sudah",
+            "title_film": "Dunkirk",
+            "rating_film": "4",
+            "release_date": "13 Juli 2017",
+            "review_film": "Harry Styles debut film! He's cool."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 4,
+        "fields": {
+            "watched_film": "Sudah",
+            "title_film": "Tenet",
+            "rating_film": "5",
+            "release_date": "26 Agustus 2020",
+            "review_film": "Robert Pattinson + gun = fall in love."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 5,
+        "fields": {
+            "watched_film": "Sudah",
+            "title_film": "Mencuri Raden Saleh",
+            "rating_film": "5",
+            "release_date": "25 Agustus 2022",
+            "review_film": "Aghniny the real WOMAN. <3"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 6,
+        "fields": {
+            "watched_film": "Sudah",
+            "title_film": "Parasite",
+            "rating_film": "5",
+            "release_date": "21 Mei 2019",
+            "review_film": "The difference between poor and wealth were so detailed."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 7,
+        "fields": {
+            "watched_film": "Sudah",
+            "title_film": "Seoul Vibe",
+            "rating_film": "5",
+            "release_date": "26 Agustus 2022",
+            "review_film": "Definately in love with Park Ju Hyun"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 8,
+        "fields": {
+            "watched_film": "Sudah",
+            "title_film": "Peninsula",
+            "rating_film": "4",
+            "release_date": "15 Juli 2020",
+            "review_film": "The zombies were scary enough."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 9,
+        "fields": {
+            "watched_film": "Sudah",
+            "title_film": "Train to Busan",
+            "rating_film": "5",
+            "release_date": "13 Mei 2016",
+            "review_film": "Worth to watch. The Zombies looks real."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 10,
+        "fields": {
+            "watched_film": "Sudah",
+            "title_film": "Midnight",
+            "rating_film": "5",
+            "release_date": "20 Juni 2021",
+            "review_film": "Wi Ha Joon the real psycho."
+        }
+    }
+]
