@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+
+  <h5>Name: </h5>
+  <p>{{username}}</p>
+
+  <table border=1 style="text-align: center; padding: 12px 15px;">
+    <tr>
+      <th style= "padding: 10px;">Date</th>
+      <th style= "padding: 10px;">Title</th>
+      <th style= "padding: 10px;">Description</th>
+      <th style= "padding: 10px;">Status</th>
+      <th style= "padding: 10px;">Action</th>
+    </tr>
+    {% comment %} Add the data below this line {% endcomment %}
+    {% for name in data %}
+        <tr>
+            <td style= "text-align: center; padding: 15px;">{{name.date}}</td>
+            <td style= "text-align: center; padding: 15px;">{{name.title}}</td>
+            <td style= "text-align: center; padding: 15px;">{{name.description}}</td>
+            <td style= "text-align: center; padding: 15px;">
+              {% if name.is_finished %}
+              Finished
+              {% else %}
+              Not Yet
+              {% endif %}
+            </td>
+            <td style= "text-align: center; padding: 15px;">
+              <button><a href="{% url 'todolist:remove' name.id %}">Delete</a></button>
+              <button><a href="{% url 'todolist:status' name.id %}">Change Status</a></button>
+              {% endfor %}
+        </tr>
+      </td>
+  </table >
+
+  <button><a href="{% url 'todolist:create_task' %}">Create</a></button>
+  <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+
+ {% endblock content %}
