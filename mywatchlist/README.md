@@ -2,6 +2,9 @@
 
 Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu Komputer Universitas Indonesia, Semester Ganjil 2022/2023 
 
+link heroku :
+https://tugas2pudil.herokuapp.com/mywatchlist/
+
 ### **Jelaskan perbedaan antara JSON, XML, dan HTML!**
 - HTMl (Hypertext Markup Language) adalah markup language yang merepresentasikan data dalam element tree untuk ditampilkan dalam bentuk web dan dapat di-kostumisasi cara penyajiannya
 
