@@ -6,40 +6,55 @@
 
 {% block content %}
 
-<div class = "login">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-    <h1>Login</h1>
+    <body style="background-image: linear-gradient(to right,#eb8787, #a6d8eb);">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
+    <div class = "login vh-100 d-flex justify-content-center align-items-center">
 
+    <div class="card border-primary mb-3" style="width: 30rem;">
+        <div class="card-body">
+            <h5 class="card-title" style="text-align: center; font-family: Lucida Console; font-weight: bold;">Login</h5>
+        
     <form method="POST" action="">
         {% csrf_token %}
-        <table>
+        <table style="font-family: Lucida Console; font-size: 13px;">
             <tr>
-                <td>Username: </td>
-                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
+                <td style= "padding: 10px; font-family: Lucida Console; ">Username👤: </td>
+                <th><input type="text" name="username" placeholder="Username" class="form-control"></th>
             </tr>
                     
             <tr>
-                <td>Password: </td>
-                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
+                <td style= "padding: 10px; font-family: Lucida Console;">Password🔑: </td>
+                <th><input type="password" name="password" placeholder="Password" class="form-control"></th>
             </tr>
 
             <tr>
-                <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
+                <th></th>
+                <td><input class="btn login_btn btn btn-primary form-control" type="submit" value="Login"></td>
             </tr>
         </table>
     </form>
-
     {% if messages %}
-        <ul>
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
+    <ul>
+        {% for message in messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
     {% endif %}     
-        
-    Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
+    
+    <p style= "padding: 10px; font-family: Lucida Console; font-size: 13px;">Belum mempunyai akun? <a href="{% url 'todolist:register' %}"> Buat Akun</a></p>
 
-</div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+
+</body>
 
 {% endblock content %}
