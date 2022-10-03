@@ -21,6 +21,9 @@
             <h3 class="card-title">{{name.title}}</h3>
             <h7 class="card-subtitle">{{name.date}}</h7>
             <p class="card-text">{{name.description}}</p>
+            <p style="text-align: center;">
+              <a style="width: 5rem;" class="btn login_btn btn btn-danger form-control" href="remove/{{name.id}}">Delete</a>
+              <a style="width: 5rem;" class="btn login_btn btn btn-info form-control" href="status/{{name.id}}">Status</a></p>
             <p class="card-text">
               {% if name.is_finished %}
               Finished✅
@@ -28,7 +31,7 @@
               Not Yet❎
               {% endif %}
             </p>
-          </div>
+            </div>
         </div>
       </div>
       {% endfor %}
