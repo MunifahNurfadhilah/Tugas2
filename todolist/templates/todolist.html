@@ -3,7 +3,6 @@
  {% block content %}
 
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
  </head>
  
@@ -21,9 +20,6 @@
             <h3 class="card-title">{{name.title}}</h3>
             <h7 class="card-subtitle">{{name.date}}</h7>
             <p class="card-text">{{name.description}}</p>
-            <p style="text-align: center;">
-              <a style="width: 5rem;" class="btn login_btn btn btn-danger form-control" href="remove/{{name.id}}">Delete</a>
-              <a style="width: 5rem;" class="btn login_btn btn btn-info form-control" href="status/{{name.id}}">Status</a></p>
             <p class="card-text">
               {% if name.is_finished %}
               Finished✅
@@ -31,6 +27,9 @@
               Not Yet❎
               {% endif %}
             </p>
+            <p style="text-align: center;">
+              <a style="width: 5rem;" class="btn login_btn btn btn-danger form-control lg" href="remove/{{name.id}}">Delete</a>
+              <a style="width: 5rem;" class="btn login_btn btn btn-info form-control lg" href="status/{{name.id}}">Status</a></p>
             </div>
         </div>
       </div>
