@@ -33,5 +33,5 @@ Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu 
 - pertama, saya melakukan import bootstrap pada setiap halaman html yang ingin dikostumisasi https://getbootstrap.com/docs/5.2/getting-started/introduction/
 - kedua, saya melakukan kostumisasi pada halaman login, resgister, dan create_task dengan mengubah font, menambah emojis, dan memasukkan elemen tersebut ke dalam cards https://getbootstrap.com/docs/5.2/components/card/ 
 - ketiga, saya melakukan kostumisasi pada halaman todolist.setiap task saya masukkan ke dalam cards beserta dengan elemen yang sebelumnya telah dibuat pada tugas 4. 
-- keempat, seluruh halaman tersebut saya cek apakah sudah responsive atau belum, dengan me-inspect pada website
+- keempat, saya menambahkan <meta name="viewport" content="width=device-width, initial-scale=1.0"> pada seluruh halaman html agar keempat halaman menjadi responsive dan cek dengan me-inspect pada halamannya
 - kelima, saya mengerjakan bonus dengan membuat folder css pada tugas2/static dan membuat file style.css dalam folder tersebut. di dalam file saya mengisi kode css agar terdapat efek saat di hover ke cards. efek hover ini berlaku pada seluruh class cards yang ada di html.
